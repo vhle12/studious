@@ -1,17 +1,11 @@
-//
-//  studiousApp.swift
-//  studious
-//
-//  Created by Vinh Le on 7/19/24.
-//
-
 import SwiftUI
 
 @main
-struct studiousApp: App {
+struct StudiousApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra("Studious", systemImage: "list.bullet.circle.fill") {
+            MainView()
         }
+        .menuBarExtraStyle(.window)
     }
 }

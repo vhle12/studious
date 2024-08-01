@@ -1,8 +1,7 @@
-//
-//  DateExtension.swift
-//  studious
-//
-//  Created by Vinh Le on 7/29/24.
-//
-
 import Foundation
+
+extension Date {
+    var startOfDay: Date {
+        return Calendar.current.startOfDay(for: self)
+    }
+}

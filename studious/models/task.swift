@@ -1,18 +1,9 @@
-//
-//  task.swift
-//  studious
-//
-//  Created by Vinh Le on 7/30/24.
-//
+import Foundation
 
-import SwiftUI
-
-struct task: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    task()
+struct Task: Identifiable, Codable {
+    var id: Int
+    var title: String
+    var start_time: String?
+    var end_time: String?
+    var completed: Bool
 }

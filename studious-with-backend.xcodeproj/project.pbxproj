@@ -13,8 +13,9 @@
 		A31A31A92C4B0F8300FA133F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31A31A82C4B0F8300FA133F /* Preview Assets.xcassets */; };
 		A31A31B22C4B0FB100FA133F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A31B12C4B0FB100FA133F /* CalendarView.swift */; };
 		A31A31B42C4B0FBE00FA133F /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A31B32C4B0FBE00FA133F /* TaskListView.swift */; };
-		A31A31B72C4B134700FA133F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A31B62C4B134700FA133F /* Task.swift */; };
 		A347ADAA2C4EC294003F7B7B /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A347ADA92C4EC294003F7B7B /* TimerView.swift */; };
+		A3E1CAAF2C581A6D005BB604 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E1CAAE2C581A6D005BB604 /* DateExtension.swift */; };
+		A3E1CAB22C593184005BB604 /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E1CAB12C593184005BB604 /* task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		A31A31AA2C4B0F8300FA133F /* studious.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = studious.entitlements; sourceTree = "<group>"; };
 		A31A31B12C4B0FB100FA133F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		A31A31B32C4B0FBE00FA133F /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
-		A31A31B62C4B134700FA133F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A347ADA92C4EC294003F7B7B /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		A3E1CAAE2C581A6D005BB604 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		A3E1CAB12C593184005BB604 /* task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A31A31A12C4B0F8200FA133F /* studiousApp.swift */,
-				A31A31B52C4B133800FA133F /* models */,
+				A3E1CAB02C593177005BB604 /* models */,
 				A31A31B02C4B0F8F00FA133F /* views */,
 				A31A31A52C4B0F8300FA133F /* Assets.xcassets */,
 				A31A31AA2C4B0F8300FA133F /* studious.entitlements */,
@@ -85,14 +87,15 @@
 				A31A31B32C4B0FBE00FA133F /* TaskListView.swift */,
 				A31A31B12C4B0FB100FA133F /* CalendarView.swift */,
 				A347ADA92C4EC294003F7B7B /* TimerView.swift */,
+				A3E1CAAE2C581A6D005BB604 /* DateExtension.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
 		};
-		A31A31B52C4B133800FA133F /* models */ = {
+		A3E1CAB02C593177005BB604 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				A31A31B62C4B134700FA133F /* Task.swift */,
+				A3E1CAB12C593184005BB604 /* task.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -132,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A31A31992C4B0F8200FA133F /* Build configuration list for PBXProject "studious" */;
+			buildConfigurationList = A31A31992C4B0F8200FA133F /* Build configuration list for PBXProject "studious-with-backend" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,9 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A347ADAA2C4EC294003F7B7B /* TimerView.swift in Sources */,
+				A3E1CAAF2C581A6D005BB604 /* DateExtension.swift in Sources */,
 				A31A31A42C4B0F8200FA133F /* MainView.swift in Sources */,
+				A3E1CAB22C593184005BB604 /* task.swift in Sources */,
 				A31A31A22C4B0F8200FA133F /* studiousApp.swift in Sources */,
-				A31A31B72C4B134700FA133F /* Task.swift in Sources */,
 				A31A31B22C4B0FB100FA133F /* CalendarView.swift in Sources */,
 				A31A31B42C4B0FBE00FA133F /* TaskListView.swift in Sources */,
 			);
@@ -356,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A31A31992C4B0F8200FA133F /* Build configuration list for PBXProject "studious" */ = {
+		A31A31992C4B0F8200FA133F /* Build configuration list for PBXProject "studious-with-backend" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A31A31AB2C4B0F8300FA133F /* Debug */,

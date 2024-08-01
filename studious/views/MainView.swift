@@ -1,24 +1,17 @@
-//
-//  ContentView.swift
-//  studious
-//
-//  Created by Vinh Le on 7/19/24.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            TaskListView()
+
         }
-        .padding()
+        .frame(width: 375, height: 550)
     }
 }
 
-#Preview {
-    ContentView()
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+    }
 }
